@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <Button
+            android:id="@+id/button4thDefaultUnitBack"
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/active_button_back" />
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity4SettingDefaultUnitTop" />
+
+        <Button
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_border" >
+
+        <TextView
+            android:id="@+id/textView4thDefaultUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Activity4SettingDefaultUnit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/background_border"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_border"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/button4thDefaultUnitKg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/active_default_unit_set_kg"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:background="@drawable/background_border" >
+
+            <Button
+                android:id="@+id/button4thDefaultUnitLb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/active_default_unit_set_lb"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

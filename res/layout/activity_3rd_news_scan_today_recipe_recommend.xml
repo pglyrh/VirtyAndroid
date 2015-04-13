@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <Button
+            android:id="@+id/button3rdTodayRecipeRecommendBack"
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/active_button_back" />
+
+        <TextView
+            style="@style/top_text"
+            android:text="推荐膳食" />
+
+        <Button
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="15dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView3rdTodayRecipeRecommend"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:id="@+id/textViewTodayRecipeRecommendName"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+			android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:text="成分：" />
+
+            <TextView
+                android:id="@+id/textViewTodayRecipeRecommendMaterials"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dp"
+                android:maxLines="12"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:text="做法：" />
+
+            <TextView
+                android:id="@+id/textViewTodayRecipeRecommendMethod"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="25dp"
+                android:maxLines="12"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="TextView" />
+            
+        </LinearLayout>
+               
+    </LinearLayout>
+          
+</LinearLayout>

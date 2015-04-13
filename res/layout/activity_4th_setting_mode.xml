@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <Button
+            android:id="@+id/button4thModeBack"
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/active_button_back" />
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity4SettingModeTop" />
+
+        <Button
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_border" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/Activity4SettingMode" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/background_border"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/button4thModeBmi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/active_default_unit_set_bmi"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:text="@string/Activity4SettingModeBmi" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/button4thModeFat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/active_default_unit_set_fat"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:text="@string/Activity4SettingModeFat" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

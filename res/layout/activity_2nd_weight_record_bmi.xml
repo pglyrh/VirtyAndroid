@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+	<!-- <LinearLayout 
+	    android:layout_width="fill_parent"
+        android:layout_height="50dp"      
+	    >	    
+	</LinearLayout> -->
+
+	<RelativeLayout
+	    android:id="@+id/relative2ndBmiWeightRecordMeter"
+	    android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+	    >
+        <edu.xidian.mti1001.virty.activity2nd.BmiView
+            android:id="@+id/showBmi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/button2ndBmiWeightRecordMeter"
+            android:layout_width="150dp"
+            android:layout_height="69dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:background="@android:color/transparent" />
+	    
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/imageView2ndBmidot" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/top_shadow" />
+        <TextView
+            android:id="@+id/textView2ndBmiUserName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|top"
+            android:text="James"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView2ndBmiUserInfo"
+            android:layout_width="280dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/textView2ndBmiUserName"
+            android:paddingTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:text="@string/Activity2BmiInfo" />
+
+    </RelativeLayout>
+	
+    <ImageView
+        style="@style/dot_page"
+        android:src="@drawable/dot_page1"
+        android:id="@+id/imageView2ndBmidot"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:id="@+id/topBarBmi"
+        style="@style/top_bar" >
+
+        <Button
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@null" />
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity2BmiTop" />
+
+         <Button
+            android:id="@+id/button2ndBmiShare"
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/active_button_share" />
+    </LinearLayout>
+
+</RelativeLayout>

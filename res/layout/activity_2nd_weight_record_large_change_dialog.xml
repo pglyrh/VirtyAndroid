@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 体重变化过大，询问用户是否需要存储的对话框 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_dialog_weight_change"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewDialogWeightChangeMuch"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/Acitivity2WeightChangeMuch" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/line" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageViewDialogChangeMuchSure"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/button_dialog_sure" />
+        <ImageView
+            android:id="@+id/imageViewDialogChangeMuchCancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/button_dialog_cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

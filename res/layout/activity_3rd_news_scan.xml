@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity3HealthInfoTop" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:id="@+id/layoutHealthTodayRecipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        style="@style/fitness_image"
+                        android:src="@drawable/health_today_recipe_button" />
+
+                    <TextView
+                        style="@style/fitness_text"
+                        android:text="@string/Activity3HealthInfo1Recipe" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutFitnessScheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        style="@style/fitness_image"
+                        android:src="@drawable/health_fitness_scheme_button" />
+
+                    <TextView
+                        style="@style/fitness_text"
+                        android:text="@string/Activity3HealthInfo2Plan" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:id="@+id/layoutFitnessInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        style="@style/fitness_image"
+                        android:src="@drawable/health_fitness_info_button" />
+
+                    <TextView
+                        style="@style/fitness_text"
+                        android:text="@string/Activity3HealthInfo3Tips" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutHealthPedometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        style="@style/fitness_image"
+                        android:src="@drawable/health_pedometer_button" />
+
+                    <TextView
+                        style="@style/fitness_text"
+                        android:text="@string/Activity3HealthInfo4Pedometer" />
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</LinearLayout>

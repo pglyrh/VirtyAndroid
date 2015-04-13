@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_fat_manual"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewDialogFatManualUser"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="导出" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageViewExportDialogPhoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/button_2nd_export_photo" />
+
+            <TextView
+                android:id="@+id/textViewExportDialogPhoto"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="保存到\n本地相册" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageViewExportDialogPdf"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/button_2nd_export_pdf" />
+
+            <TextView
+                android:id="@+id/textViewExportDialogPdf"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="保存PDF到\n文件管理器" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageViewExportDialogPrint"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/button_2nd_export_print" />
+
+            <TextView
+                android:id="@+id/textViewExportDialogPrint"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="打印\n历史数据" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

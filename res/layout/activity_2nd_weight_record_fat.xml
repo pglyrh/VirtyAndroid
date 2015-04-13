@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <Button
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@null" />
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity2FatTop" />
+
+        <Button
+            android:id="@+id/button2ndFatShare"
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/active_button_share" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_border" >
+
+        <ImageView
+            android:id="@+id/imageView2ndFatDot1"
+            style="@style/dot_page"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/dot_page1" />
+
+        <TextView
+            android:id="@+id/textView2ndFatTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="@string/Activity2FatInfo" />
+
+        <edu.xidian.mti1001.virty.activity2nd.RingView
+            android:id="@+id/showFatCircle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <!--
+             <ImageView
+            android:id="@+id/imageView2ndFatCircle"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/textView2ndFatTop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/health_pedometer_button_circle" />
+        -->
+        <!--
+             <ImageView
+            android:id="@+id/imageView2ndFatLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView2ndFatDot1"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/line" />
+        -->
+
+        <ImageView
+            android:id="@+id/imageView2ndFatDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_above="@+id/imageView2ndFatDot1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/up" />
+        <!--
+             <ImageView
+            android:id="@+id/imageView2ndFatLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView2ndFatDot1"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/line" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@+id/imageView2ndFatLine"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/up" />
+        -->
+
+        <Button
+            android:id="@+id/buttonFatTest"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent" />
+
+         <TextView
+            android:id="@+id/textViewFatBallNumber"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textScaleX="1"
+            android:text="60.0" />
+
+        <TextView
+            android:id="@+id/textViewFatBallItem"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textViewFatBallNumber"
+            android:layout_centerHorizontal="true"
+            android:text="体重" />
+        <TextView
+            android:id="@+id/textViewFatBallUnit"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewFatBallNumber"
+            android:layout_centerHorizontal="true"
+            android:text="kg" /> 
+    </RelativeLayout>
+
+</LinearLayout>

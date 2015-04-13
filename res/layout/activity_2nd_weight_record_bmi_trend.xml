@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <Button
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@null" />
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity2BmiTrendTop" />
+
+        <Button
+            android:id="@+id/buttonBmiTrendShare"
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/active_button_share" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/buttonBmiTrendWeek"
+                style="@style/trend_button"
+                android:src="@drawable/active_button_2nd_trend_week" />
+
+            <ImageView
+                android:id="@+id/buttonBmiTrendMonth"
+                style="@style/trend_button"
+                android:src="@drawable/active_button_2nd_trend_month" />
+
+            <ImageView
+                android:id="@+id/buttonBmiTrendSeason"
+                style="@style/trend_button"
+                android:src="@drawable/active_button_2nd_trend_season" />
+
+            <ImageView
+                android:id="@+id/buttonBmiTrendYear"
+                style="@style/trend_button"
+                android:src="@drawable/active_button_2nd_trend_year" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewBmiTrendUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:text="(kg)" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBmiTrendBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1" >
+			<edu.xidian.mti1001.virty.activity2nd.ShowTrend	
+			    android:id="@+id/showTrend"		    
+				android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+			/>
+
+        </RelativeLayout>
+
+<!--         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" >
+        </LinearLayout> -->
+    </LinearLayout>
+
+    <ImageView
+        style="@style/dot_page"
+        android:src="@drawable/dot_page2" />
+
+</LinearLayout>

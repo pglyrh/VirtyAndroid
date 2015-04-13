@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+        <Button
+            android:id="@+id/button3rdPedomeBack"
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/active_button_back" />
+        <TextView
+            style="@style/top_text"
+            android:text="@string/ActivityHealthInfo4PedometerTop" />
+        <Button
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+
+            <ImageView
+                android:id="@+id/button3rdPedomeOnOff"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/active_pedome_on_off" />
+            <ImageView
+                android:id="@+id/button3rdPedomeSet"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/active_pedome_set" />
+    </LinearLayout>
+    
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView3rdPedomeNum"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="@string/ActivityHealthInfo4PedometerSetting" />
+            <TextView
+                android:id="@+id/textView3rdPedomePercent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="@string/ActivityHealthInfo4PedometerHaveDone" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="@string/ActivityHealthInfo4PedometerTargetStep" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:text="@string/ActivityHealthInfo4PedometerProcessing" />
+        </TableRow>
+        
+    </TableLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/background_border" >
+
+        <ImageView
+            android:id="@+id/imageViewPedometer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:src="@drawable/active_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3rdPedomeCurrent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-25dp"
+            android:text="@string/ActivityHealthInfo4PedometerDone" />
+
+        <TextView
+            android:id="@+id/textView3rdPedomeCurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3rdPedomeCurrent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-25dp"
+            android:text="@string/ActivityHealthInfo4PedometerStep" />
+
+    </RelativeLayout>
+          
+</LinearLayout>

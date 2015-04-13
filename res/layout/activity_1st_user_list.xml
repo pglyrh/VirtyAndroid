@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <Button
+            android:id="@+id/buttonUserEdit"
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/active_button_user_edit" />
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity1UserListTopUsers" />
+
+        <Button
+            android:id="@+id/buttonUserAdd"
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/active_button_user_add" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#F0F0F0F0" >
+
+        <SearchView
+            android:id="@+id/searchViewUser"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffffff"
+            android:focusable="false"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/Activity1UserListSearch" >
+        </SearchView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+      	<!-- android:listSelector="#00000000" -->
+        <ListView
+            android:id="@+id/listViewUser"
+            android:layout_width="140dp"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/user_info_background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_border"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewUserName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    android:text="user"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <!--
+                         <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp" >
+                    -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="@string/Activity1UserListGender" />
+
+                            <TextView
+                                android:id="@+id/textViewUserSex"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:paddingLeft="10dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="@string/Activity1UserListAge" />
+
+                            <TextView
+                                android:id="@+id/textViewUserAge"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:paddingLeft="10dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="@string/Activity1UserListHeight" />
+
+                            <TextView
+                                android:id="@+id/textViewUserHeight"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:paddingLeft="10dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="@string/Activity1UserListTargetWeight" />
+
+                            <TextView
+                                android:id="@+id/textViewUserWeight"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:paddingLeft="10dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--
+                             <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="@string/Activity1UserListGender" />
+
+                            <TextView
+                                android:id="@+id/textViewUserSex"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="10dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="@string/Activity1UserListAge" />
+
+                            <TextView
+                                android:id="@+id/textViewUserAge"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1" 
+                                android:layout_marginRight="10dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="@string/Activity1UserListHeight" />
+
+                            <TextView
+                                android:id="@+id/textViewUserHeight"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="10dp"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:text="@string/Activity1UserListTargetWeight" />
+
+                            <TextView
+                                android:id="@+id/textViewUserWeight"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="10dp" />
+                        </TableRow>
+                    </TableLayout>
+                    -->
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp" >
+
+                <Button
+                    android:id="@+id/buttonUserEnterHealthTools"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/active_button_user_enter_health_tools" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/buttonUserEnterHealthTools"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/Activity1UserListEnterHealthTool" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

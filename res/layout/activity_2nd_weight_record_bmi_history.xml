@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <Button
+            android:id="@+id/button2ndBmiHistoryClear"
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/active_button_clear" />
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity2BmiHistoryTop" />
+
+        <Button
+            android:id="@+id/button2ndBmiHistoryExport"
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/active_button_export" />
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+	    >
+
+		<RelativeLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal" >
+
+		    <TextView
+		        android:id="@+id/textView2ndBmiHistoryNow"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:gravity="center"
+		        android:text="@string/Activity2BmiHistoryLatest" />
+
+		    <TextView
+		        android:id="@+id/textView2ndBmiHistoryNowWeight"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="45dp"
+		        android:layout_toRightOf="@+id/textView2ndBmiHistoryNow"
+		        android:gravity="center"
+		        android:text="50kg" />
+		</RelativeLayout>
+
+	</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background_border" >
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/Activity2BmiHistoryTime" />
+
+        <TextView
+            android:id="@+id/textView2ndBmiHistoryUnit"
+            android:layout_marginRight="15dp"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical|left"
+            android:text="@string/Activity2BmiHistoryWeight" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/listView2ndBmiHistory"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/dot_page"
+        android:src="@drawable/dot_page3" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <Button
+            android:id="@+id/button2ndFatHistoryClear"
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/active_button_clear" />
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity2FatHistoryTop" />
+
+        <Button
+            android:id="@+id/button2ndFatHistoryExport"
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/active_button_export" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ListView
+            android:layout_marginTop="5dp"
+            android:id="@+id/listView2ndFatHistory"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/dot_page"
+        android:src="@drawable/dot_page3" />
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_fat_manual"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewDialogFatManualUser"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="请输入您的体重和人体阻抗" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="体重（Kg）"/>
+        <TextView
+            android:id="@+id/textViewFatManualPickWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:textColor="#12a944"
+            android:text="60" />
+    </LinearLayout>
+    <NumberPicker
+        android:id="@+id/numberPickerFatManualWeight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+	<ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人体阻抗（KΩ）"/>
+        <TextView
+            android:id="@+id/textViewSeekBarFatManualResistor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textColor="#12a944"
+            android:text="0.0" />
+    </LinearLayout>
+	<SeekBar
+        android:id="@+id/seekBarFatManualResistor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageViewDialogFatManualSure"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/button_dialog_sure" />
+        <ImageView
+            android:id="@+id/imageViewDialogFatManualCancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/button_dialog_cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>

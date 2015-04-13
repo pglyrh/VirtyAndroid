@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.xidian.mti1001.virty.welcome"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_image"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ActivityWelcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="edu.xidian.mti1001.virty.welcome.WelcomeSplashScreen"></activity>
+        
+        <activity android:name="edu.xidian.mti1001.virty.activity1st.Activity1stUserList"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity1st.Activity1stUserListAdd"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity1st.Activity1stUserListGroup"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity1st.Activity1stUserListEdit"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity1st.Activity1stUserListEditList"></activity>
+        
+        <activity android:name="edu.xidian.mti1001.virty.activity2nd.Activity2ndWeightRecord"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity2nd.Activity2ndWeightRecordBmi"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity2nd.Activity2ndWeightRecordBmiHistory"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity2nd.Activity2ndWeightRecordBmiTrend"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity2nd.Activity2ndWeightRecordFat"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity2nd.Activity2ndWeightRecordFatHistory"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity2nd.Activity2ndWeightRecordFatTrend"></activity>
+        
+        <activity android:name="edu.xidian.mti1001.virty.activity3rd.Activity3rdNewScan"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity3rd.Activity3rdNewScanTodayRecipe"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity3rd.Activity3rdNewScanTodayRecipeRecommend"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity3rd.Activity3rdNewScanFitnessScheme"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity3rd.Activity3rdNewScanFitnessInfo"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity3rd.Activity3rdNewScanPedome"></activity>
+        
+        <activity android:name="edu.xidian.mti1001.virty.activity4th.Activity4thSetting"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity4th.Activity4thSettingDeviceConnect"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity4th.Activity4thSettingDefaultUnit"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity4th.Activity4thSettingMode"></activity>
+        <activity android:name="edu.xidian.mti1001.virty.activity4th.Activity4thSettingHelp"></activity>
+        
+        <activity android:name="edu.xidian.mti1001.virtyandroid.ActivityDeviceSetting"></activity>
+		<activity android:name="edu.xidian.mti1001.virtyandroid.MainTabs" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

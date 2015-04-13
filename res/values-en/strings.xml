@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Setting</string>
+    <!-- 1页
+    	UserList页中用到的string资源 -->
+    <string name="Activity1UserListTopUsers">Users</string>
+    <string name="Activity1UserListSearch">Search</string>
+    <string name="Activity1UserListGender">gender</string>
+    <string name="Activity1UserListAge">age</string>
+    <string name="Activity1UserListHeight">height</string>
+    <string name="Activity1UserListTargetWeight">target \nweight</string>
+    <string name="Activity1UserListEnterHealthTool">Enter Health Tool</string>
+    <!-- 添加user页中用到的string资源 -->
+    <string name="Activity1UserListAddTopCreate">Create New User</string>
+    <string name="Activity1UserListAddTips">Please fill in your information</string>
+    <string name="Activity1UserListAddName">name</string>
+    <string name="Activity1UserListAddGender">gender</string>
+    <string name="Activity1UserListAddAge">age</string>
+    <string name="Activity1UserListAddHeight">height</string>
+    <string name="Activity1UserListAddTargetWeight">target weight</string>
+    <string name="Activity1UserListAddGenderDialogTop">please select your gender</string>
+    <string name="Activity1UserListAddGenderDialogFemale">female</string>
+    <string name="Activity1UserListAddGenderDialogMale">male</string>
+    <!-- 编辑用户列表用到的string资源 -->
+    <string name="Activity1UserListEditListTopEdit">Edit</string>
+    <!-- 编辑用户(具体用户)用到的string资源 -->
+    <string name="Activity1UserListEditTopEditUser">Edit User</string>
+    
+    <!-- 4页
+    	设置(setting)页中用到的string资源 -->
+    <string name="Activity4SettingTopSetting">Setting</string>
+    <string name="Activity4Setting1Device">Device Connect Mode</string>
+    <string name="Activity4Setting2Unit">Default Unit</string>
+    <string name="Activity4Setting3Mode">Health Scale Mode</string>
+    <string name="Activity4Setting4Help">Help</string>
+    <string name="Activity4Setting5Buy">Buy Health scale - Virty online</string>
+    <!-- 设置-设备连接 -->
+    <string name="Activity4SettingDeviceConnectTop">Device Connect Mode</string>
+    <string name="Activity4SettingDeviceConnect">Cannot find any scale. Please make sure your scale is powered.
+        Note that the scale cannot connect to more than one android device at the same time.</string>
+    <string name="Activity4SettingDeviceConnectBluetooth">Bluetooth Mode</string>
+    <string name="Activity4SettingDeviceConnectManual">Hand Edit Mode</string>
+    <string name="Activity4SettingDeviceConnectSearch">Scanning devices，please wait...</string>
+    <string name="Activity4SettingDeviceConnectDeviceConnected">Device have been connected.</string>
+    <string name="Activity4SettingDeviceConnectSuccess">Connected</string>
+    <string name="Activity4SettingDeviceConnectDeviceName">Device name: Smart Body Scale</string>
+    <!-- 设置-默认单位 -->
+    <string name="Activity4SettingDefaultUnitTop">Default Unit</string>
+    <string name="Activity4SettingDefaultUnit">Unit: Metric system</string>
+    <string name="Activity4SettingDefaultUnitKg">Unit: Metric system</string>
+    <string name="Activity4SettingDefaultUnitLb">Unit: British system</string>
+    <!-- 设置-健康秤模式 -->
+    <string name="Activity4SettingModeTop">Health Scale Mode</string>
+    <string name="Activity4SettingMode">Please choose the rigth mode according to the equipment model.
+        You can get the equipment mode information from weighing scale and the product packaging.</string>
+    <string name="Activity4SettingModeBmi">Weight Scale</string>
+    <string name="Activity4SettingModeFat">Fat Scale</string>
+    <!-- 设置-帮助 -->
+    <string name="Activity4SettingModeHelpTop">Help</string>
+    
+    <!-- 3页
+    	健康时讯(News Scan)页中用到的string资源 -->
+    <string name="Activity3HealthInfoTop">Health Info</string>
+    <string name="Activity3HealthInfo1Recipe">Today Recipe</string>
+    <string name="Activity3HealthInfo2Plan">Fitness Plan</string>
+    <string name="Activity3HealthInfo3Tips">Health Tips</string>
+    <string name="Activity3HealthInfo4Pedometer">Pedometer</string>
+    <!-- 健康时讯-今日食谱 -->
+    <string name="Activity3HealthInfoRecipeTop">Today Recipe</string>
+    <!-- 健康时讯-健身方案 -->
+    <string name="Activity3HealthInfoPlanTop">Fitness Plan</string>
+    <string name="Activity3HealthInfoPlan"> , this is tailor-made for your fitness program, adhere to exercise!</string>
+    <string name="Activity3HealthInfoPlanGym">Gym</string>
+    <string name="Activity3HealthInfoPlanHome">Home Fitness</string>
+    <!-- 健康时讯-计步器-->
+    <string name="ActivityHealthInfo4PedometerTop">Pedometer</string>
+    <string name="ActivityHealthInfo4PedometerSetting">No Setting</string>
+    <string name="ActivityHealthInfo4PedometerTargetStep">Target Steps</string>
+    <string name="ActivityHealthInfo4PedometerHaveDone">Done 0.0%</string>
+    <string name="ActivityHealthInfo4PedometerProcessing">Processing</string>
+    <string name="ActivityHealthInfo4PedometerDone">Done</string>
+    <string name="ActivityHealthInfo4PedometerStep">Steps</string>
+    
+     <!-- 2页
+    	健康体重秤(weight and record)页中用到的string资源 -->
+    <string name="Activity2BmiTop">Smart Weight Scale</string>
+    <string name="Activity2BmiInfo">You have not had your weight value. Try your health scale.</string>
+    <string name="Activity2BmiValueUnderweight">Underweight</string>
+    <string name="Activity2BmiValueModerate">Moderate</string>
+    <string name="Activity2BmiValueOverweight">Overweight</string>
+    <string name="Activity2BmiValueObesity">Obesity</string>
+    <string name="Activity2BmiValueObese">Obese</string>
+    <!-- Bmi趋势图 -->
+    <string name="Activity2BmiTrendTop">Trend Chart</string>
+    <!-- Bmi历史记录 -->
+    <string name="Activity2BmiHistoryTop">History Records</string>
+    <string name="Activity2BmiHistoryLatest">Latest Weight</string>
+    <string name="Activity2BmiHistoryTime">Time</string>
+    <string name="Activity2BmiHistoryWeight">Weight</string>
+    <!-- Fat -->
+    <string name="Activity2FatTop">Smart Body Scale</string>
+    <string name="Activity2FatInfo">Please bare feet, or you can not get fat data!</string>
+    <string name="Activity2FatRingWeight">Weight</string>
+    <string name="Activity2FatRingFat">Fat</string>
+    <string name="Activity2FatRingWater">Water</string>
+    <string name="Activity2FatRingMuscle">Muscle</string>
+    <string name="Activity2FatRingBone">Bone</string>
+    <string name="Activity2FatRingBMR">BMR</string>
+    <string name="Activity2FatCompareMore">more</string>
+    <string name="Activity2FatCompareModerate">moderate</string>
+    <string name="Activity2FatCompareLess">less</string>
+    <!-- Fat趋势图 -->
+    <string name="Activity2FatTrendTop">Trend Chart</string>
+    <!-- Fat历史记录 -->
+    <string name="Activity2FatHistoryTop">History Records</string>
+
+    <!-- 常用string（dialog中） -->
+    <string name="DialogSure">Submit</string>
+    <string name="DialogCancel">Cancel</string>
+    <string name="DialogMale">male</string>
+    <string name="DialogFemale">female</string>
+    <string name="DialogInputName">Please input name</string>
+    <string name="DialogSelectHeight">Please select your height</string>
+    <string name="DialogSelectWeight">Please select your weight</string>
+    <string name="DialogPrompt">Prompt</string>
+    <string name="DialogConfirmDeleteUser">Do you really want to delete this user?</string>
+	<string name="DialogConfirmDeleteRecord">Do you really want to remove all records of this user?</string>
+	<string name="DialogDoneToSaveAsPhoto">Successfully saved to your local photo album</string>
+    <string name="DialogDoneToSaveAsPdf">Successfully saved as a PDF file</string>
+    
+    <!-- 常用string（Toast中） -->
+    <string name="ToastHavenotDone">You have unfilled entry.</string>
+    <string name="ToastHaveUser">This user already exists.</string>
+    <string name="ToastSelectUser">Please select a user.</string>
+    <string name="ToastNotHaveUser">The user you want does not exist.</string>
+    <string name="ToastPressAgain">Press again to exit.</string>
+    <string name="ToastExportPrint">Select "System" -> "Print".</string>
+    <string name="ToastExportPrintNotSupport">Sorry, your version of the system does not support Google Cloud Print.</string>
+    <string name="ToastPedometerNotSupport">Your phone does not support the pedometer.</string>
+    <string name="ActivityHealthInfo4PedometerSetTarget">Set Target Steps</string>
+    
+    <!-- 常用string（Share中） -->
+    <string name="Share">Share</string>
+    <string name="ShareInfo">Health can be measured, health scale from HuaChao.</string>
+
+</resources>

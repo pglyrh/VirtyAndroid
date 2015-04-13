@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Virty</string>
+    <string name="action_settings">设置</string>
+    <!-- UserList页中用到的string资源 -->
+    <string name="Activity1UserListTopUsers">用户</string>
+    <string name="Activity1UserListSearch">请输入用户名</string>
+    <string name="Activity1UserListGender">性别</string>
+    <string name="Activity1UserListAge">年龄</string>
+    <string name="Activity1UserListHeight">身高</string>
+    <string name="Activity1UserListTargetWeight">目标体重</string>
+    <string name="Activity1UserListEnterHealthTool">进入健康工具</string>
+    <!-- 添加user页中用到的string资源 -->
+    <string name="Activity1UserListAddTopCreate">创建新用户</string>
+    <string name="Activity1UserListAddTips">请依次输入您的个人信息</string>
+    <string name="Activity1UserListAddName">用户名</string>
+    <string name="Activity1UserListAddGender">性别</string>
+    <string name="Activity1UserListAddAge">年龄</string>
+    <string name="Activity1UserListAddHeight">身高</string>
+    <string name="Activity1UserListAddTargetWeight">目标体重</string>
+    <string name="Activity1UserListAddGenderDialogTop">请选择您的性别</string>
+    <string name="Activity1UserListAddGenderDialogFemale">女</string>
+    <string name="Activity1UserListAddGenderDialogMale">男</string>
+    <!-- 编辑用户列表用到的string资源 -->
+    <string name="Activity1UserListEditListTopEdit">编辑用户</string>
+    <!-- 编辑用户(具体用户)用到的string资源 -->
+    <string name="Activity1UserListEditTopEditUser">编辑用户</string>
+    
+    <!-- 4页
+    	设置(setting)页中用到的string资源 -->
+    <string name="Activity4SettingTopSetting">设置</string>
+    <string name="Activity4Setting1Device">设备连接</string>
+    <string name="Activity4Setting2Unit">默认单位</string>
+    <string name="Activity4Setting3Mode">健康秤模式</string>
+    <string name="Activity4Setting4Help">帮助</string>
+    <string name="Activity4Setting5Buy">在线购买 Virty健康秤</string>
+    <!-- 设置-设备连接 -->
+    <string name="Activity4SettingDeviceConnectTop">设备连接设置</string>
+    <string name="Activity4SettingDeviceConnect">没有发现任何健康秤。请确保您的健康秤电源正常。</string>
+    <string name="Activity4SettingDeviceConnectBluetooth">开启蓝牙连接模式</string>
+    <string name="Activity4SettingDeviceConnectManual">进入手动输入模式</string>
+    <string name="Activity4SettingDeviceConnectSearch">正在搜索并连接设备，请稍后...</string>
+    <string name="Activity4SettingDeviceConnectDeviceConnected">设备已正常连接，请放心使用！</string>
+    <string name="Activity4SettingDeviceConnectSuccess">连接成功，欢迎使用</string>
+    <string name="Activity4SettingDeviceConnectDeviceName">设备名称：脂肪秤</string>
+    <!-- 设置-默认单位 -->
+    <string name="Activity4SettingDefaultUnitTop">默认单位</string>
+    <string name="Activity4SettingDefaultUnit">当前选择单位为公制</string>
+    <string name="Activity4SettingDefaultUnitKg">当前选择单位为公制</string>
+    <string name="Activity4SettingDefaultUnitLb">当前选择单位为英制</string>
+    <!-- 设置-健康秤模式 -->
+    <string name="Activity4SettingModeTop">选择健康秤模式</string>
+    <string name="Activity4SettingMode">请根据您购买的设备型号选择适用模式，您可以参考体重秤、说明书或产品外包装获取设备型号信息。</string>
+    <string name="Activity4SettingModeBmi">健康体重秤</string>
+    <string name="Activity4SettingModeFat">脂肪秤</string>
+    <!-- 设置-帮助 -->
+    <string name="Activity4SettingModeHelpTop">帮助</string>
+    
+    <!-- 3页
+    	健康时讯(News Scan)页中用到的string资源 -->
+    <string name="Activity3HealthInfoTop">健康时讯</string>
+    <string name="Activity3HealthInfo1Recipe">今日食谱</string>
+    <string name="Activity3HealthInfo2Plan">健身方案</string>
+    <string name="Activity3HealthInfo3Tips">健康资讯</string>
+    <string name="Activity3HealthInfo4Pedometer">计步器</string>
+    <!-- 健康时讯-今日食谱 -->
+    <string name="Activity3HealthInfoRecipeTop">今日食谱</string>
+    <!-- 健康时讯-健身方案 -->
+    <string name="Activity3HealthInfoPlanTop">健身方案</string>
+    <string name="Activity3HealthInfoPlan"> , 这是为你量身定制的健身方案</string>
+    <string name="Activity3HealthInfoPlanGym">健身房健身</string>
+    <string name="Activity3HealthInfoPlanHome">居家健身</string>
+    <!-- 健康时讯-计步器-->
+    <string name="ActivityHealthInfo4PedometerTop">计步器</string>
+    <string name="ActivityHealthInfo4PedometerSetting">未设置</string>
+    <string name="ActivityHealthInfo4PedometerTargetStep">目标步数</string>
+    <string name="ActivityHealthInfo4PedometerHaveDone">已完成0.0%</string>
+    <string name="ActivityHealthInfo4PedometerProcessing">当前进度</string>
+    <string name="ActivityHealthInfo4PedometerDone">已完成</string>
+    <string name="ActivityHealthInfo4PedometerStep">步</string>
+    <string name="ActivityHealthInfo4PedometerSetTarget">设置目标步数</string>
+    
+    <!-- 2页
+    	健康体重秤(weight and record)页中用到的string资源 -->
+    <string name="Activity2BmiTop">BMI健康体重秤</string>
+    <string name="Activity2BmiInfo">您还没有体重值呢，快试试健康秤吧！</string>
+    <string name="Activity2BmiValueUnderweight">过轻</string>
+    <string name="Activity2BmiValueModerate">正常</string>
+    <string name="Activity2BmiValueOverweight">过重</string>
+    <string name="Activity2BmiValueObesity">肥胖</string>
+    <string name="Activity2BmiValueObese">极度肥胖</string>
+    <string name="Acitivity2WeightChangeMuch">数据变化太大，是否存储？</string>
+    <!-- Bmi趋势图 -->
+    <string name="Activity2BmiTrendTop">趋势图</string>
+    <!-- Bmi历史记录 -->
+    <string name="Activity2BmiHistoryTop">历史记录</string>
+    <string name="Activity2BmiHistoryLatest">本次称重</string>
+    <string name="Activity2BmiHistoryTime">时间</string>
+    <string name="Activity2BmiHistoryWeight">体重</string>
+    <!-- Fat -->
+    <string name="Activity2FatTop">脂肪秤</string>
+    <string name="Activity2FatInfo">请裸足称重，否则无法得到脂肪数据！</string>
+    <string name="Activity2FatRingWeight">体重</string>
+    <string name="Activity2FatRingFat">脂肪率</string>
+    <string name="Activity2FatRingWater">水分率</string>
+    <string name="Activity2FatRingMuscle">肌肉率</string>
+    <string name="Activity2FatRingBone">骨量</string>
+    <string name="Activity2FatRingBMR">基础代谢</string>
+    <string name="Activity2FatCompareMore">偏多</string>
+    <string name="Activity2FatCompareModerate">正常</string>
+    <string name="Activity2FatCompareLess">偏少</string>
+    <!-- Fat趋势图 -->
+    <string name="Activity2FatTrendTop">趋势图</string>
+    <!-- Fat历史记录 -->
+    <string name="Activity2FatHistoryTop">历史记录</string>
+    
+    <!-- 常用string（dialog中） -->
+    <string name="DialogSure">确定</string>
+    <string name="DialogCancel">取消</string>
+    <string name="DialogMale">男</string>
+    <string name="DialogFemale">女</string>
+    <string name="DialogInputName">请输入用户名</string>
+    <string name="DialogSelectHeight">请选择您的身高</string>
+    <string name="DialogSelectWeight">请选择您的体重</string>
+    <string name="DialogPrompt">确认</string>
+    <string name="DialogConfirmDeleteUser">确认要删除此用户吗？</string>
+    <string name="DialogConfirmDeleteRecord">确认要删除此用户所有记录吗？</string>
+    <string name="DialogDoneToSaveAsPhoto">成功保存到本地相册</string>
+    <string name="DialogDoneToSaveAsPdf">成功保存为PDF文件</string>
+    
+    <!-- 常用string（Toast中） -->
+    <string name="ToastHavenotDone">你有未完成的内容</string>
+    <string name="ToastHaveUser">此用户已经存在</string>
+    <string name="ToastSelectUser">请先选择一个用户</string>
+    <string name="ToastNotHaveUser">查找的用户不存在</string>
+    <string name="ToastPressAgain">再按一次退出</string>
+    <string name="ToastExportPrint">请选择“系统”——>“打印”</string>
+    <string name="ToastExportPrintNotSupport">对不起，您的系统版本暂不支持Google云打印</string>
+    <string name="ToastPedometerNotSupport">您的手机暂不支持计步</string>
+    
+    <!-- 常用string（Share中） -->
+    <string name="Share">分享</string>
+    <string name="ShareInfo">健康可以衡量，华潮健康秤</string>
+    
+    <!-- 蓝牙 -->
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+</resources>

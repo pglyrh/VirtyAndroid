@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+        <!-- <Button
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_back" /> -->
+        <TextView
+            style="@style/top_text"
+            android:text="设备连接设置" />
+<!--         <Button
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@null" /> -->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewDeviceSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/device_setting_picture1" />
+   
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="70dp"  >
+
+        <Button
+            android:id="@+id/buttonBluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:background="@drawable/active_button_device_connect_setting_bluetooth"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:text="开启蓝牙连接模式" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <Button
+            android:id="@+id/buttonManual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:background="@drawable/active_button_device_connect_setting_manual"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewManual"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:text="进入手动输入模式" />
+
+    </RelativeLayout>
+ 
+</LinearLayout>

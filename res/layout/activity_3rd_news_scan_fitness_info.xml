@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <Button
+            android:id="@+id/button3rdFitnessInfoBack"
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/active_button_back" />
+
+        <TextView
+            android:id="@+id/textView3rdFitnessInfoNumber"
+            style="@style/top_text"
+            android:text="1/20" />
+
+        <Button
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/viewPageFitnessInfo"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingMultiplier = "1.2"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+          
+</LinearLayout>

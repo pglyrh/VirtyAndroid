@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    <LinearLayout 
+        style="@style/top_bar" >
+        <Button
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@null"/>
+        <TextView 
+			style="@style/top_text"
+			android:text="@string/Activity2FatTrendTop" />
+
+        <Button
+            android:id="@+id/buttonFatTrendShare"
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/active_button_share" />
+
+    </LinearLayout>
+    
+    <TableLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="80dp"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+        >
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+            <ImageView
+                android:id="@+id/buttonFatTrendWeek"
+                style="@style/trend_button"
+                android:src="@drawable/active_button_2nd_trend_week" />
+
+            <ImageView
+                android:id="@+id/buttonFatTrendMonth"
+                style="@style/trend_button"
+                android:src="@drawable/active_button_2nd_trend_month" />
+
+            <ImageView
+                android:id="@+id/buttonFatTrendSeason"
+                style="@style/trend_button"
+                android:src="@drawable/active_button_2nd_trend_season" />
+
+            <ImageView
+                android:id="@+id/buttonFatTrendYear"
+                style="@style/trend_button"
+                android:src="@drawable/active_button_2nd_trend_year" />
+            
+        </TableRow>
+        
+
+        
+    </TableLayout>
+    
+       <!-- <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_alignRight="@+id/imageView1"
+           android:layout_marginTop="14dp"
+           android:text="(Kg)" /> -->
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewFatTrendUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:text="(kg)" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutFatTrendBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1" >
+			<edu.xidian.mti1001.virty.activity2nd.ShowFatTrend	
+			    android:id="@+id/showFatTrend"		    
+				android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+			/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="40dp" >
+
+       <TableRow
+           android:id="@+id/tableRow1"
+           android:layout_width="fill_parent"
+           android:layout_height="28dp"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+
+           android:layout_marginLeft="50dp"
+           android:layout_marginRight="50dp"
+           android:layout_marginBottom="5dp" >
+
+           <Button
+               android:id="@+id/buttonFatTrendSeg1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/active_button_fat_trend_segment1" />
+           <Button
+               android:id="@+id/buttonFatTrendSeg2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/active_button_fat_trend_segment2" />
+           <Button
+               android:id="@+id/buttonFatTrendSeg3"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/active_button_fat_trend_segment3" />
+           <Button
+               android:id="@+id/buttonFatTrendSeg4"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/active_button_fat_trend_segment4" />
+           <Button
+               android:id="@+id/buttonFatTrendSeg5"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/active_button_fat_trend_segment5" />
+           <Button
+               android:id="@+id/buttonFatTrendSeg6"
+               android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/active_button_fat_trend_segment6" />
+          
+       </TableRow>
+<!--        
+       <ImageView
+           android:id="@+id/imageView1"
+           android:layout_width="270dp"
+           android:layout_height="250dp"
+           android:layout_below="@+id/textView1"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="23dp"
+           android:background="@drawable/weight_record_trend_trand_line" /> -->
+
+
+   </RelativeLayout>
+
+   <ImageView
+        style="@style/dot_page"
+        android:src="@drawable/dot_page2" />
+
+</LinearLayout>

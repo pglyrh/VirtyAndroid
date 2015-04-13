@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" 
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/buttonUserAddCancel"
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/active_button_cancel" />
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity1UserListAddTopCreate" />
+
+        <Button
+            android:id="@+id/buttonUserAddSure"
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/active_button_sure" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Activity1UserListAddTips" />
+
+        <LinearLayout
+            android:id="@+id/zoneAddName"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    style="@style/add_user_image"
+                    android:src="@drawable/user_add_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textViewUserAddName"
+                    style="@style/add_user_text"
+                    android:text="@string/Activity1UserListAddName" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/zoneAddSex"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    style="@style/add_user_image"
+                    android:src="@drawable/user_add_sex" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textViewUserAddSex"
+                    style="@style/add_user_text"
+                    android:text="@string/Activity1UserListAddGender" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/zoneAddAge"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    style="@style/add_user_image"
+                    android:src="@drawable/user_add_age" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textViewUserAddAge"
+                    style="@style/add_user_text"
+                    android:text="@string/Activity1UserListAddAge" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/zoneAddHeight"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    style="@style/add_user_image"
+                    android:src="@drawable/user_add_height" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textViewUserAddHeight"
+                    style="@style/add_user_text"
+                    android:text="@string/Activity1UserListAddHeight" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/zoneAddWeight"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    style="@style/add_user_image"
+                    android:src="@drawable/user_add_target_weight" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textViewUserAddWeight"
+                    style="@style/add_user_text"
+                    android:text="@string/Activity1UserListAddTargetWeight" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

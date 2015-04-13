@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <Button
+            android:id="@+id/buttonUserEditBack"
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/active_button_back" />
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity1UserListEditListTopEdit" />
+
+        <Button
+            android:id="@+id/buttonUserEditAdd"
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/active_button_user_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/listViewUserEditList"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

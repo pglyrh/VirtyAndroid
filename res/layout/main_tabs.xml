@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+<!-- android:id="@android:id/tabcontent" -->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFF" >
+        </FrameLayout>
+<!-- 
+        <fragment 
+            android:id="@+id/tab_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            /> -->
+        
+        <!-- TabWidget管理所有的选项卡，id名是android指定的 -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+        
+          <TableLayout
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#d8d8d8"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background_border"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/buttonTab1"
+                        style="@style/tab_bottom"
+                        android:background="@drawable/active_button_main_tab1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/buttonTab2"
+                        style="@style/tab_bottom"
+                        android:background="@drawable/active_button_main_tab2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/buttonTab3"
+                        style="@style/tab_bottom"
+                        android:background="@drawable/active_button_main_tab3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/buttonTab4"
+                        style="@style/tab_bottom"
+                        android:background="@drawable/active_button_main_tab4" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>  
+    </LinearLayout>
+
+</TabHost>

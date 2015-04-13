@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity4SettingTopSetting" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewSetting1Device"
+                        style="@style/fitness_image"
+                        android:src="@drawable/setting_device_connect_button" />
+
+                    <TextView
+                        style="@style/setting_text"
+                        android:text="@string/Activity4Setting1Device" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewSetting2Unit"
+                        style="@style/fitness_image"
+                        android:src="@drawable/setting_default_unit_button" />
+
+                    <TextView
+                        style="@style/setting_text"
+                        android:text="@string/Activity4Setting2Unit" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewSetting3Mode"
+                        style="@style/fitness_image"
+                        android:src="@drawable/setting_mode_button" />
+
+                    <TextView
+                        style="@style/setting_text"
+                        android:text="@string/Activity4Setting3Mode" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewSetting4Help"
+                        style="@style/fitness_image"
+                        android:src="@drawable/setting_help_button" />
+
+                    <TextView
+                        style="@style/setting_text"
+                        android:text="@string/Activity4Setting4Help" />
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp" >
+
+        <ImageView
+            android:id="@+id/imageViewSetting5Buy"
+            style="@style/fitness_image"
+            android:src="@drawable/setting_buy_online_button" />
+
+        <TextView
+            style="@style/fitness_text"
+            android:layout_marginBottom="20dp"
+            android:text="@string/Activity4Setting5Buy" />
+    </RelativeLayout>
+
+</LinearLayout>

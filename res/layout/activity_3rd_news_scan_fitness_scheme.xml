@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/top_bar" >
+        <Button
+            android:id="@+id/button3rdFitnessSchemeBack"
+            style="@style/top_button"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/active_button_back" />
+        <TextView
+            style="@style/top_text"
+            android:text="@string/Activity3HealthInfoPlanTop" />
+        <Button
+            style="@style/top_button"
+            android:layout_marginRight="10dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        >
+
+        <!-- <TextView
+            android:id="@+id/textViewFitnessSchemeUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="TextView" /> -->
+
+        <TextView
+            android:id="@+id/textViewFitnessSchemeUserName" 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="15dp"
+        	android:layout_marginRight="15dp"
+        	android:text="@string/Activity3HealthInfoPlan"
+            />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@drawable/background_border"
+        >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignLeft="@+id/imageViewFitnessScheme1"
+            android:layout_below="@+id/imageViewFitnessScheme1"
+            android:layout_marginTop="18dp"
+            android:text="@string/Activity3HealthInfoPlanGym" />
+
+        <ImageView
+            android:id="@+id/imageViewFitnessScheme1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/health_scheme_1" />
+
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewFitnessScheme1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imageViewFitnessScheme1"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            >
+
+            <TextView
+                android:id="@+id/textViewFitnessSchemeGym1Frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="3次/周" />
+            <TextView
+                android:id="@+id/textViewFitnessSchemeGym1Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="跑步机" />
+            <TextView
+                android:id="@+id/textViewFitnessSchemeGym1Quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="60分钟" />
+
+        </LinearLayout>
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewFitnessScheme1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/imageViewFitnessScheme1"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            >
+
+            <TextView
+                android:id="@+id/textViewFitnessSchemeGym2Frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="2次/周" />
+            <TextView
+                android:id="@+id/textViewFitnessSchemeGym2Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="力量机械" />
+            <TextView
+                android:id="@+id/textViewFitnessSchemeGym2Quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="60分钟" />
+
+        </LinearLayout>
+        
+<!--         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewFitnessScheme1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="63dp"
+            android:layout_toRightOf="@+id/imageViewFitnessScheme1"
+            android:text="2次/周   力量机械   60分钟" /> -->
+           
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@drawable/background_border"
+        >
+	
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignLeft="@+id/imageViewFitnessScheme2"
+            android:layout_below="@+id/imageViewFitnessScheme2"
+            android:layout_marginTop="10dp"
+            android:text="@string/Activity3HealthInfoPlanHome" />
+
+        <ImageView
+            android:id="@+id/imageViewFitnessScheme2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/health_scheme_2" />
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewFitnessScheme2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imageViewFitnessScheme2"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            >
+
+            <TextView
+                android:id="@+id/textViewFitnessSchemeHome1Frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="3次/周" />
+            <TextView
+                android:id="@+id/textViewFitnessSchemeHome1Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="形体操" />
+            <TextView
+                android:id="@+id/textViewFitnessSchemeHome1Quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="60分钟" />
+
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewFitnessScheme2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/imageViewFitnessScheme2"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            >
+
+            <TextView
+                android:id="@+id/textViewFitnessSchemeHome2Frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="2次/周" />
+            <TextView
+                android:id="@+id/textViewFitnessSchemeHome2Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="瑜伽" />
+            <TextView
+                android:id="@+id/textViewFitnessSchemeHome2Quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="60分钟" />
+
+        </LinearLayout>
+<!--         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewFitnessScheme2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@+id/imageViewFitnessScheme2"
+            android:text="3次/周   形体操      60分钟" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewFitnessScheme2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="63dp"
+            android:layout_toRightOf="@+id/imageViewFitnessScheme2"
+            android:text="2次/周   瑜伽         60分钟" /> -->
+           
+    </RelativeLayout>
+          
+</LinearLayout>
